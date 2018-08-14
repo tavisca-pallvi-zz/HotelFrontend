@@ -1,0 +1,69 @@
+﻿* {
+    box-sizing: border-box;
+}
+body{
+    font-size:1.7em;
+}
+.gridLayout {
+    display: flex;
+    padding-left: 3%;
+    padding-right: 3%;
+    justify-content: center;
+}
+    .gridLayout figure {
+     
+        margin-top: 6%;
+        margin-left: 3%;
+        width:20%;
+        margin-right: 3%;
+        height: 20%;
+        border: 1px solid black;
+    }
+
+
+.mainContent {
+    align-content: center;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.tableLayout {
+margin:6%;
+}
+.commute {
+    display:inline;
+    width: 100%;
+    display: flex;
+    padding-left: 8%;
+    padding-right: 3%;
+    margin:3%;
+    border:1px solid black;
+}
+    .commute section {
+        display: inline-block;
+        padding-right: 1%;
+        width: 22%;
+        height: 8%;
+        border: 1px solid green;
+    }
+p {
+    padding-left: 4%;
+    padding-top: 3%;
+    margin: 4%;
+}
+.imglogo {
+    display: inline-block;
+    width: 25%;
+    height:85%;
+    border:1px solid red;
+}
+.logo p{
+    font-size:55%;
+    display: inline-block;
+    vertical-align:top;
+}
+input[type=checkbox] {
+    vertical-align:middle;
+}
