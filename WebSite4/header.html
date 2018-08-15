@@ -3,6 +3,32 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="Styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media screen and (max-width: 800px) {
+            .logo {
+               min-width:100%;
+            }
+            .commute{
+                /*width: 100%;*/
+            }
+            .commute {
+                flex-direction: column;
+            }
+           
+        }
+        @media screen and (max-width: 500px) {
+            .gridLayout{
+                flex-direction: column;
+            }
+            figure {
+                width: 80%;
+            
+            }
+
+}
+
+    </style>
     <title></title>
 </head>
 <body>
@@ -28,65 +54,169 @@
                     <img  src="" />
                 </figure>
             </section>
- 
-            <section class="tableLayout">
-                <p>
-                    Filter Results
-                </p>
-                <article class="commute">
-                    <section class="logo">
-                        <img class="imglogo" src="hotel.png" alt="hotellogo" />
-                       <p>HOTEL</p>
-                        <input type="checkbox" name="hotel" value="hotel">
+            <div class="searchBar">
+
+                <p id="deal">
+                    DEAL FINDER
+                    </p>
+                <textarea rows="2" cols="90"></textarea>
+                </div>
+                <section class="tableLayout">
+                    <p id="results">
+                        Filter Results
+                    </p>
+                    <article class="commute">
+                        <section class="logo" id="hotel">
+                            <img class="imglogo" src="hotel.png" alt="hotellogo" />
+                            <p>HOTEL</p>
+                            <input type="checkbox" name="hotel" value="hotel">
+                        </section>
+                        <section class="logo">
+                            <img class="imglogo" src="car2.png" alt="car2logo" />
+                            <p>CAR</p>
+                            <input type="checkbox" name="car" value="car">
+                        </section>
+                        <section class="logo">
+                            <img class="imglogo" src="cruise.png" alt="cruiselogo" />
+                            <p>CRUISE</p>
+                            <input type="checkbox" name="cruise" value="cruise">
+                        </section>
+                    </article>
+                    <section class="searchResult">
+
+
+
+                        <table>
+                            <tr>
+                                <th>Destination</th>
+                                <th>Name</th>
+                                <th>Valid Through</th>
+                                <th>Offer</th>
+
+                            </tr>
+                            <tr>
+                                <td>Fort Myer Beach,US</td>
+                                <td>The Tremont Chicago Hotel</td>
+                                <td>July 30,2018</td>
+                                <td>Save Up to 25%</td>
+
+                            </tr>
+                            <tr>
+
+                                <td>94</td>
+                                <td>Swissotel Chicago</td>
+                                <td>July 30,2018</td>
+                                <td>Save Up to 25%</td>
+
+                            </tr>
+                            <tr>
+                                <td>Washington,US</td>
+                                <td>Johnson</td>
+                                <td>July 30,2018</td>
+                                <td>Save Up to 25%</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Chicago, Illinois, USA
+
+                                </td>
+                                <td> Chicago South Loop</td>
+                                <td>67</td>
+                                <td>Save Up to 50%</td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                    Chicago, Illinois, USA
+                                </td>
+                                <td>
+                                    Freehand Chicago
+                                </td>
+                                <td>July 30,2018</td>
+                                <td>Up to 50%</td>
+                            </tr>
+                        </table>
+                        <button>Load More</button>
+
+
                     </section>
-                    <section class="logo">
-                        <img class="imglogo" src="car2.png" alt="car2logo" />
-                        <p>CAR</p>
-                        <input type="checkbox" name="car" value="car">
+
+
+                </section>
+                <section class="banner">
+                    <figure>
+
+                        <img src="" />
+                    </figure>
+                    <div id="offer">
+                        <p>Play all day and all Night in Great Las Vegas Hotel</p>
+                        <a href="#"><p>View Offers</p></a>
+                    </div>
+
+                </section>
+                <section class="siteLinks">
+
+                    <section>
+                        <a href="#">Main Navigations</a>
+                        <hr width="220" />
+                        <ul>
+
+                            <li>
+                                Flights
+                            </li>
+                            <li>
+                                Hotels
+
+                            </li>
+                            <li>
+                                Cars
+
+                            </li>
+                            <li>
+                                Activities
+
+                            </li>
+                            <li>
+                                Cruises
+
+                            </li>
+                            <li>
+                                Deals
+
+                            </li>
+                        </ul>
                     </section>
-                    <section class="logo">
-                        <img class="imglogo" src="cruise.png" alt="cruiselogo" />
-                        <p>CRUISE</p>
-                        <input type="checkbox" name="cruise" value="cruise">
+                    <section>
+
+                        <a href="#">Other Links</a>
+                        <hr width="220" />
+                        <ul>
+                            <li>
+                                Frequently Asked Questions
+                            </li>
+
+                            <li>
+                                Seller of Travell
+                            </li>
+                            <li>
+                                Website Of Terms
+
+                            </li>
+                            <li>
+                                Travel Terms And Conditions
+                            </li>
+                            <li>
+                                Privacy Policy
+                            </li>
+
+                        </ul>
                     </section>
-                </article>
-               <table>
+                    <div>
 
+                    </div>
+                </section>
 
-               </table>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-            </section>
-            <section class="banner">
-
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-            </section>
-            <section class="siteLinks">
-
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-            </section>
-
-        </article>
+</article>
  </main>
 </body>
 </html>
